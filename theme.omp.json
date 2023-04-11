@@ -81,7 +81,7 @@
           "foreground": "#ffffff",
           "powerline_symbol": "\ue0b0",
           "style": "powerline",
-          "template": "{{ .WorkspaceName }}{{ if .Version }} {{ .Version }}{{ end }}",
+          "template": "\uDB84\uDC62 {{ .WorkspaceName }}{{ if .Version }} {{ .Version }}{{ end }}",
           "type": "terraform"
         },
         {
