@@ -40,17 +40,10 @@
           "foreground": "#ffffff",
           "leading_diamond": "\ue0b6",
           "style": "diamond",
-          "template": "Ricardo Molendijk",
+          "template": " \uEBCA Ricardo Molendijk ",
           "type": "session"
         },
-        {
-          "type": "root",
-          "style": "powerline",
-          "powerline_symbol": "",
-          "foreground": "#111111",
-          "background": "#ffff66",
-          "template": ""
-        },
+
         {
           "background": "#DA627D",
           "foreground": "#ffffff",
