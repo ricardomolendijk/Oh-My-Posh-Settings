@@ -31,7 +31,6 @@
         }
       ],
       "type": "rprompt"
-
     },
     {
       "alignment": "left",
@@ -78,6 +77,14 @@
           "type": "node"
         },
         {
+          "background": "#747EF4",
+          "foreground": "#ffffff",
+          "powerline_symbol": "\ue0b0",
+          "style": "powerline",
+          "template": "{{ .WorkspaceName }}{{ if .Version }} {{ .Version }}{{ end }}",
+          "type": "terraform"
+        },
+        {
           "background": "#33658A",
           "foreground": "#ffffff",
           "powerline_symbol": "\ue0b0",
@@ -85,10 +92,7 @@
           "template": " ﴱ {{.Context}}{{if .Namespace}}/{{.Namespace}}{{end}}",
           "type": "kubectl",
           "parse_kubeconfig": true
-        },
-        
-
-
+        }
       ],
       "type": "prompt"
     }
