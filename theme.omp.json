@@ -77,14 +77,6 @@
           "template": " \ue718 {{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}{{ .Full }} ",
           "type": "node"
         },
-         {
-          "background": "#854EBA",
-          "foreground": "#ffffff",
-          "powerline_symbol": "\ue0b0",
-          "style": "powerline",
-          "template": " ﴱ {{.Version}}{{if .Workspace}}/{{.Workspace}}{{end}}",
-          "type": "terraform"
-        },
         {
           "background": "#33658A",
           "foreground": "#ffffff",
