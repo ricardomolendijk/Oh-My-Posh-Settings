@@ -82,7 +82,7 @@
           "foreground": "#ffffff",
           "powerline_symbol": "\ue0b0",
           "style": "powerline",
-          "template": " ﴱ {{.Context}}{{if .Namespace}} :: {{.Namespace}}{{end}}",
+          "template": " ﴱ {{.Context}}{{if .Namespace}}/{{.Namespace}}{{end}}",
           "type": "kubectl",
           "parse_kubeconfig": true
         }
