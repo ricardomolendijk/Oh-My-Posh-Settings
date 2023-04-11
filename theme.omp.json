@@ -83,7 +83,7 @@
           "powerline_symbol": "\ue0b0",
           "style": "powerline",
           "template": " ﴱ {{.Version}}{{if .Workspace}}/{{.Workspace}}{{end}}",
-          "type": "terraform",
+          "type": "terraform"
         },
         {
           "background": "#33658A",
