@@ -30,7 +30,7 @@
         }
       ],
       "type": "rprompt"
-	  
+
     },
     {
       "alignment": "left",
@@ -77,6 +77,14 @@
           "type": "node"
         },
         {
+          "background": "#86BBD8",
+          "foreground": "#ffffff",
+          "powerline_symbol": "\ue0b0",
+          "style": "powerline",
+          "template": " ﴱ {{.Context}}{{if .Namespace}} :: {{.Namespace}}{{end}} ﴱ ",
+          "type": "kubectl"
+        },
+        {
           "background": "#33658A",
           "foreground": "#ffffff",
           "properties": {
@@ -87,6 +95,7 @@
           "trailing_diamond": "\ue0b0",
           "type": "time"
         }
+
       ],
       "type": "prompt"
     }
