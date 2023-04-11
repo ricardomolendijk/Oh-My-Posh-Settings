@@ -40,7 +40,7 @@
           "foreground": "#ffffff",
           "leading_diamond": "\ue0b6",
           "style": "diamond",
-          "template": "{{ .UserName }} ",
+          "template": "Ricardo Molendijk",
           "type": "session"
         },
         {
@@ -77,25 +77,15 @@
           "type": "node"
         },
         {
-          "background": "#86BBD8",
+          "background": "#33658A",
           "foreground": "#ffffff",
           "powerline_symbol": "\ue0b0",
           "style": "powerline",
-          "template": " ﴱ {{.Context}}{{if .Namespace}} :: {{.Namespace}}{{end}}",
+          "template": " ﴱ {{.Context}}{{if .Namespace}} :: {{.Namespace}}{{end}} ﴱ ",
           "type": "kubectl",
           "parse_kubeconfig": true
-        },
-        {
-          "background": "#33658A",
-          "foreground": "#ffffff",
-          "properties": {
-            "time_format": "15:04"
-          },
-          "style": "diamond",
-          "template": " \u2665 {{ .CurrentDate | date .Format }} ",
-          "trailing_diamond": "\ue0b0",
-          "type": "time"
         }
+
 
       ],
       "type": "prompt"
