@@ -44,6 +44,14 @@
           "type": "session"
         },
         {
+          "type": "root",
+          "style": "powerline",
+          "powerline_symbol": "",
+          "foreground": "#111111",
+          "background": "#ffff66",
+          "template": ""
+        },
+        {
           "background": "#DA627D",
           "foreground": "#ffffff",
           "powerline_symbol": "\ue0b0",
@@ -81,7 +89,7 @@
           "foreground": "#ffffff",
           "powerline_symbol": "\ue0b0",
           "style": "powerline",
-          "template": "\uDB84\uDC62 {{ .WorkspaceName }}{{ if .Version }} {{ .Version }}{{ end }}",
+          "template": "\uDB84\uDC62 {{ .WorkspaceName }}{{ end }} ",
           "type": "terraform"
         },
         {
