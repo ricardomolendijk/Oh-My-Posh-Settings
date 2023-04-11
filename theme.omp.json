@@ -81,7 +81,7 @@
           "foreground": "#ffffff",
           "powerline_symbol": "\ue0b0",
           "style": "powerline",
-          "template": "{{if .Env.KTerm=true }} ﴱ {{.Context}}{{if .Namespace}} :: {{.Namespace}}{{end}} ﴱ {{if .Env}}",
+          "template": "{{if .Env.KTerm }} ﴱ {{.Context}}{{if .Namespace}} :: {{.Namespace}}{{end}} ﴱ {{if .Env}}",
           "type": "kubectl",
           "parse_kubeconfig": true
         }
