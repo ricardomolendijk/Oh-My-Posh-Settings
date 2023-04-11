@@ -77,13 +77,13 @@
           "template": " \ue718 {{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}{{ .Full }} ",
           "type": "node"
         },
-        {
-          "type": "terraform",
+         {
+          "background": "#854EBA",
+          "foreground": "#ffffff",
+          "powerline_symbol": "\ue0b0",
           "style": "powerline",
-          "powerline_symbol": "",
-          "foreground": "#000000",
-          "background": "#ebcc34",
-          "template": "{{.WorkspaceName}}"
+          "template": " ﴱ {{.Version}}{{if .Workspace}}/{{.Workspace}}{{end}}",
+          "type": "terraform",
         },
         {
           "background": "#33658A",
