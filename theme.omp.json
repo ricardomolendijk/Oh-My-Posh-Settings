@@ -1,6 +1,5 @@
 {
   "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
-  "console_title_template": "{{.Folder}}",
   "blocks": [
     {
       "alignment": "left",
@@ -76,14 +75,6 @@
           "style": "powerline",
           "template": " \ue718 {{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}{{ .Full }} ",
           "type": "node"
-        },
-        {
-          "background": "#747EF4",
-          "foreground": "#ffffff",
-          "powerline_symbol": "\ue0b0",
-          "style": "powerline",
-          "template": "\uDB84\uDC62 {{ .WorkspaceName }}{{ end }} ",
-          "type": "terraform"
         },
         {
           "background": "#33658A",
