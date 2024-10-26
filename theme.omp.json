@@ -48,7 +48,7 @@
         },
         {
           "type": "command",
-          "style": "plain",
+          "style": "powerline",
           "background": "#3D68FF",
           "foreground": "#ffffff",
           "properties": {
