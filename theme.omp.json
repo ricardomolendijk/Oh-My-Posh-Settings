@@ -43,7 +43,7 @@
           "foreground": "#ffffff",
           "powerline_symbol": "\ue0b0",
           "style": "powerline",
-          "template": "{{ if .IsTerraformInitialized }}\uDB84\uDC62 {{ .Version }}{{ if .WorkspaceName }}/{{ .WorkspaceName }}{{ end }}{{ end }} ",
+          "template": "\uDB84\uDC62 {{ .Version }}{{ if .WorkspaceName }}/{{ .WorkspaceName }}{{ end }} ",
           "type": "terraform"
         },
         {
