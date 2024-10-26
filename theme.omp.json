@@ -16,10 +16,7 @@
           "background": "#63CCCA",
           "foreground": "#ffffff",
           "powerline_symbol": "\ue0b0",
-          "properties": {
-            "style": "folder"
-          },
-          "style": "powerline",
+          "style": "folder",
           "template": " {{ .Path }} ",
           "type": "path"
         },
@@ -56,6 +53,7 @@
         {
           "background": "#42858C",
           "foreground": "#ffffff",
+          "powerline_symbol": "\ue0b0",
           "properties": {
             "display_namespace": true
           },
@@ -69,5 +67,5 @@
     }
   ],
   "final_space": true,
-  "version": 2
+  "version": 3
 }
