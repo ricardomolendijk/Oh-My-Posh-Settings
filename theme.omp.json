@@ -35,16 +35,15 @@
       "alignment": "left",
       "segments": [
         {
-          "background": "#9A348E",
+          "background": "#031926",
           "foreground": "#ffffff",
           "leading_diamond": "\ue0b6",
           "style": "diamond",
-          "template": " Ricardo Molendijk ",
+          "template": "{{ .UserName }} ",
           "type": "session"
         },
-
         {
-          "background": "#DA627D",
+          "background": "#468189",
           "foreground": "#ffffff",
           "powerline_symbol": "\ue0b0",
           "properties": {
@@ -55,7 +54,7 @@
           "type": "path"
         },
         {
-          "background": "#FCA17D",
+          "background": "#77ACA2",
           "foreground": "#ffffff",
           "powerline_symbol": "\ue0b0",
           "properties": {
@@ -69,7 +68,7 @@
           "type": "git"
         },
         {
-          "background": "#86BBD8",
+          "background": "#9DBEBB",
           "foreground": "#ffffff",
           "powerline_symbol": "\ue0b0",
           "style": "powerline",
@@ -79,11 +78,13 @@
         {
           "background": "#33658A",
           "foreground": "#ffffff",
-          "powerline_symbol": "\ue0b0",
-          "style": "powerline",
-          "template": " ﴱ {{.Context}}{{if .Namespace}}/{{.Namespace}}{{end}}",
-          "type": "kubectl",
-          "parse_kubeconfig": true
+          "properties": {
+            "time_format": "15:04"
+          },
+          "style": "diamond",
+          "template": " \u2665 {{ .CurrentDate | date .Format }} ",
+          "trailing_diamond": "\ue0b0",
+          "type": "time"
         }
       ],
       "type": "prompt"
