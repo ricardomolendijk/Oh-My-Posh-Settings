@@ -1,27 +1,31 @@
 {
   "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "console_title_template": "{{.Folder}}",
   "blocks": [
     {
       "alignment": "left",
       "segments": [
         {
-          "background": "#397367",
+          "background": "#5BCCF0",
           "foreground": "#ffffff",
           "leading_diamond": "\ue0b6",
           "style": "diamond",
-          "template": "{{ .FullName }} ",
+          "template": "{{ .FullName }}",
           "type": "session"
         },
         {
-          "background": "#63CCCA",
+          "background": "#5cb2ec",
           "foreground": "#ffffff",
           "powerline_symbol": "\ue0b0",
-          "style": "folder",
+          "properties": {
+            "style": "folder"
+          },
+          "style": "powerline",
           "template": " {{ .Path }} ",
           "type": "path"
         },
         {
-          "background": "#5DA399",
+          "background": "#7396de",
           "foreground": "#ffffff",
           "powerline_symbol": "\ue0b0",
           "properties": {
@@ -35,37 +39,34 @@
           "type": "git"
         },
         {
-          "background": "#42858C",
+          "background": "#8d77c2",
           "foreground": "#ffffff",
           "powerline_symbol": "\ue0b0",
           "style": "powerline",
-          "template": " \ue718{{ if .DockerfileExists }} \u26A1 {{ .DockerVersion }}{{ end }} ",
-          "type": "docker"
-        },
-        {
-          "background": "#42858C",
-          "foreground": "#ffffff",
-          "powerline_symbol": "\ue0b0",
-          "style": "powerline",
-          "template": " \ue718{{ if .TerraformInitialized }} \u26A1 {{ .TerraformVersion }}{{ if .TerraformWorkspace }} / {{ .TerraformWorkspace }}{{ end }}{{ end }} ",
+          "template": "{{ if .IsTerraformInitialized }}\uDB84\uDC62 {{ .Version }}{{ if .WorkspaceName }}/{{ .WorkspaceName }}{{ end }}{{ end }} ",
           "type": "terraform"
         },
         {
-          "background": "#42858C",
+          "background": "#41B8FF",
           "foreground": "#ffffff",
           "powerline_symbol": "\ue0b0",
-          "properties": {
-            "display_namespace": true
-          },
-          "style": "diamond",
-          "template": " \u2388 {{ .Context }}{{ if ne .Namespace \"default\" }}/{{ .Namespace }}{{ end }} ",
-          "trailing_diamond": "\ue0b0",
-          "type": "kubernetes"
+          "style": "powerline",
+          "template": "{{ if .DockerfileExists }}\uF308 {{ .DockerVersion }}{{ end }} ",
+          "type": "docker"
+        },
+        {
+          "background": "#3D68FF",
+          "foreground": "#ffffff",
+          "powerline_symbol": "\ue0b0",
+          "style": "powerline",
+          "template": " ﴱ {{.Context}}{{if .Namespace}}/{{.Namespace}}{{end}}",
+          "type": "kubectl",
+          "parse_kubeconfig": true
         }
       ],
       "type": "prompt"
     }
   ],
   "final_space": true,
-  "version": 3
+  "version": 2
 }
