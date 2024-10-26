@@ -10,11 +10,11 @@
           "foreground": "#ffffff",
           "leading_diamond": "\ue0b6",
           "style": "diamond",
-          "template": "{{ .UserName }}",
+          "template": "Ricardo Molendijk",
           "type": "session"
         },
         {
-          "background": "#5cb2ec",
+          "background": "#5cb2ecbf",
           "foreground": "#ffffff",
           "powerline_symbol": "\ue0b0",
           "properties": {
