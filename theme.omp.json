@@ -10,7 +10,7 @@
           "foreground": "#ffffff",
           "leading_diamond": "\ue0b6",
           "style": "diamond",
-          "template": "Ricardo Molendijk",
+          "template": " Ricardo Molendijk ",
           "type": "session"
         },
         {
@@ -43,15 +43,25 @@
           "foreground": "#ffffff",
           "powerline_symbol": "\ue0b0",
           "style": "powerline",
-          "template": "\uDB84\uDC62 {{ .Version }}{{ if .WorkspaceName }}/{{ .WorkspaceName }}{{ end }} ",
+          "template": " \uDB84\uDC62 {{ .Version }}{{ if .WorkspaceName }}/{{ .WorkspaceName }}{{ end }} ",
           "type": "terraform"
+        },
+        {
+          "type": "command",
+          "style": "plain",
+          "background": "#3D68FF",
+          "foreground": "#ffffff",
+          "properties": {
+            "shell": "bash",
+            "command": "[ -f Dockerfile ] && echo \"   $(docker --version | awk '{print $3}') \""
+          }
         },
         {
           "background": "#3D68FF",
           "foreground": "#ffffff",
           "powerline_symbol": "\ue0b0",
           "style": "powerline",
-          "template": " ﴱ {{.Context}}{{if .Namespace}}/{{.Namespace}}{{end}}",
+          "template": " ﴱ {{.Context}}{{if .Namespace}}/{{.Namespace}}{{end}} ",
           "type": "kubectl",
           "parse_kubeconfig": true
         }
