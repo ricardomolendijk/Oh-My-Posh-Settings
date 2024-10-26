@@ -47,14 +47,6 @@
           "type": "terraform"
         },
         {
-          "background": "#41B8FF",
-          "foreground": "#ffffff",
-          "powerline_symbol": "\ue0b0",
-          "style": "powerline",
-          "template": "{{ if .HasDockerfile }}\uF308 {{ .DockerVersion }}{{ end }} ",
-          "type": "docker"
-        },
-        {
           "background": "#3D68FF",
           "foreground": "#ffffff",
           "powerline_symbol": "\ue0b0",
