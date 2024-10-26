@@ -5,45 +5,15 @@
       "alignment": "left",
       "segments": [
         {
-          "type": "text",
-          "style": "diamond",
-          "leading_diamond": "\ue0b6",
-          "foreground": "#ffffff",
-          "background": "#cc3802",
-          "template": "{{ if .Env.PNPPSHOST }} \uf8c5 {{ .Env.PNPPSHOST }} {{ end }}"
-        },
-        {
-          "type": "text",
-          "style": "powerline",
-          "foreground": "#ffffff",
-          "background": "#047e84",
-          "powerline_symbol": "\ue0b0",
-          "template": "{{ if .Env.PNPPSSITE }} \uf672 {{ .Env.PNPPSSITE }}{{ end }}"
-        },
-        {
-          "type": "text",
-          "style": "diamond",
-          "trailing_diamond": "\ue0b4",
-          "foreground": "#ffffff",
-          "background": "#047e84",
-          "template": "{{ if .Env.PNPPSSITE }}\u00A0{{ end }}"
-        }
-      ],
-      "type": "rprompt"
-    },
-    {
-      "alignment": "left",
-      "segments": [
-        {
-          "background": "#031926",
+          "background": "#397367",
           "foreground": "#ffffff",
           "leading_diamond": "\ue0b6",
           "style": "diamond",
-          "template": "{{ .UserName }} ",
+          "template": "{{ .FullName }} ",
           "type": "session"
         },
         {
-          "background": "#468189",
+          "background": "#63CCCA",
           "foreground": "#ffffff",
           "powerline_symbol": "\ue0b0",
           "properties": {
@@ -54,7 +24,7 @@
           "type": "path"
         },
         {
-          "background": "#77ACA2",
+          "background": "#5DA399",
           "foreground": "#ffffff",
           "powerline_symbol": "\ue0b0",
           "properties": {
@@ -68,23 +38,31 @@
           "type": "git"
         },
         {
-          "background": "#9DBEBB",
+          "background": "#42858C",
           "foreground": "#ffffff",
           "powerline_symbol": "\ue0b0",
           "style": "powerline",
-          "template": " \ue718 {{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}{{ .Full }} ",
-          "type": "node"
+          "template": " \ue718{{ if .DockerfileExists }} \u26A1 {{ .DockerVersion }}{{ end }} ",
+          "type": "docker"
         },
         {
-          "background": "#33658A",
+          "background": "#42858C",
+          "foreground": "#ffffff",
+          "powerline_symbol": "\ue0b0",
+          "style": "powerline",
+          "template": " \ue718{{ if .TerraformInitialized }} \u26A1 {{ .TerraformVersion }}{{ if .TerraformWorkspace }} / {{ .TerraformWorkspace }}{{ end }}{{ end }} ",
+          "type": "terraform"
+        },
+        {
+          "background": "#42858C",
           "foreground": "#ffffff",
           "properties": {
-            "time_format": "15:04"
+            "display_namespace": true
           },
           "style": "diamond",
-          "template": " \u2665 {{ .CurrentDate | date .Format }} ",
+          "template": " \u2388 {{ .Context }}{{ if ne .Namespace \"default\" }}/{{ .Namespace }}{{ end }} ",
           "trailing_diamond": "\ue0b0",
-          "type": "time"
+          "type": "kubernetes"
         }
       ],
       "type": "prompt"
