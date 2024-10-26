@@ -53,7 +53,7 @@
           "foreground": "#ffffff",
           "properties": {
             "shell": "bash",
-            "command": "[ -f Dockerfile ] && echo \"   $(docker --version | awk '{print $3}') \""
+            "command": "[ -f Dockerfile ] && echo \"  $(docker --version | awk '{print $3}' | sed 's/,//') \""
           }
         },
         {
