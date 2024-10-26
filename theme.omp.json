@@ -47,17 +47,6 @@
           "type": "terraform"
         },
         {
-          "type": "command",
-          "style": "powerline",
-          "background": "#2d4bba",
-          "foreground": "#ffffff",
-          "powerline_symbol": "\ue0b0",
-          "properties": {
-            "shell": "bash",
-            "command": "[ -f Dockerfile ] && echo \"  $(docker --version | awk '{print $3}' | sed 's/,//') \""
-          }
-        },
-        {
           "background": "#3D68FF",
           "foreground": "#ffffff",
           "powerline_symbol": "\ue0b0",
